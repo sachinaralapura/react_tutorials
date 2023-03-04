@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Mess name="city"></Mess>
-      <Hello name="sachin" heroname="mistborn"></Hello>
+      <Hello name="Kelsier" heroname="mistborn"></Hello>
       <Welcome name="Kelsier"></Welcome>
       <Counter></Counter>
       <FunctionClick></FunctionClick>
