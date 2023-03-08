@@ -6,6 +6,9 @@ import Counter from "./components/state";
 import FunctionClick from "./components/FunctionClick";
 import {ClassClick} from "./components/FunctionClick";
 import EventBind from "./components/EventBind";
+import ParentComponent from "./components/ParentComponent";
+import Conditional from "./components/Conditional"
+import NameList from "./components/NameList";
 function App() {
   return (
     <div className="App">
@@ -16,6 +19,9 @@ function App() {
       <FunctionClick></FunctionClick>
       <ClassClick></ClassClick>
       <EventBind> </EventBind>
+      <ParentComponent />
+      <Conditional></Conditional>
+      <NameList></NameList>
     </div>
   );
 }
