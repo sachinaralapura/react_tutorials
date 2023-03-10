@@ -7,7 +7,7 @@ const heading = {
 }
 function Style(props) {
   let className = props.primary ? "primary" : "";
-  console.log(React.version)
+
   return (
     <div >
       <h3 className={`${className} fontxl`}>StyleSheet</h3>

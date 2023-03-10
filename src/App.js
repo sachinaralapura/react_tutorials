@@ -11,6 +11,8 @@ import Conditional from "./components/Conditional";
 import NameList from "./components/NameList";
 import Style from "./components/StyleSheet";
 import Styles from "./appStyles.module.css";
+import Form from "./components/Form";
+import LifeCycleA from "./components/LifeCycleA";
 function App() {
   return (
     <div className="App">
@@ -20,12 +22,14 @@ function App() {
       <Counter></Counter>
       <FunctionClick></FunctionClick>
       <ClassClick></ClassClick>
-      <EventBind> </EventBind> 
-      <ParentComponent />
+      <EventBind> </EventBind>
+      <ParentComponent name="sachin" />
       <Conditional></Conditional>
       <NameList></NameList>
       <Style primary={true}></Style>
       <h3 className={Styles.sucess}>CSS modules</h3>
+      <Form></Form>
+      <LifeCycleA></LifeCycleA>
     </div>
   );
 }
