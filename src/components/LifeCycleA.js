@@ -7,23 +7,25 @@ class LifeCycleA extends Component {
     this.state = {
       name: "sachin",
     };
-    console.log("constructor");
+   // console.log("constructor");
   }
 
   static getDerivedStateFromProps(props, state) {
-    console.log("getDerivedStateFromProps");
+    //console.log("getDerivedStateFromProps");
     return null;
   }
 
   componentDidMount() {
-    console.log("componentDidMount");
+    //console.log("componentDidMount");
   }
 
   render() {
-    console.log("render");
+    const {children,name} = this.props
+    //console.log("render");
     return (
       <div>
-        LifeCycleA
+        {children}
+        {name}
         <LifeCycleB></LifeCycleB>
       </div>
     );

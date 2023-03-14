@@ -6,20 +6,20 @@ class LifeCycleB extends Component {
     this.state = {
       name: "sachin",
     };
-    console.log("constructor")
+    //console.log("constructor")
   }
 
   static getDerivedStateFromProps(props, state) {
-    console.log("getDerivedStateFromProps");
+    //console.log("getDerivedStateFromProps");
     return null;
   }
 
   componentDidMount() {
-    console.log("componentDidMount");
+    //console.log("componentDidMount");
   }
 
   render() {
-    console.log("render");
+    //console.log("render");
     return <div>LifeCycleB</div>
   }
 }
