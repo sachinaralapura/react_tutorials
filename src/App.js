@@ -20,6 +20,7 @@ import PortalDemo from "./components/portalDemo";
 import ClickCounter from "./components/Clickcounter";
 import HoverCounter from "./components/HoverCounter";
 import ComponentA from "./components/ComponentA";
+import { UserProvider } from "./components/userContext";
 function App() {
   return (
     <div className="App">
@@ -43,7 +44,9 @@ function App() {
       <PortalDemo></PortalDemo>
       <ClickCounter name="ClickCounter"></ClickCounter>
       <HoverCounter></HoverCounter>
-      <ComponentA name = "sachin"></ComponentA>
+      <UserProvider value={"using Context"}>
+        <ComponentA name="by passing props through component tree"></ComponentA>
+      </UserProvider>
     </div>
   );
 }
