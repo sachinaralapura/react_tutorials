@@ -21,6 +21,8 @@ import ClickCounter from "./components/Clickcounter";
 import HoverCounter from "./components/HoverCounter";
 import ComponentA from "./components/ComponentA";
 import { UserProvider } from "./components/userContext";
+import PostList from "./Http/PostList";
+import PostForm from "./Http/PostForm";
 function App() {
   return (
     <div className="App">
@@ -37,7 +39,7 @@ function App() {
       <h3 className={Styles.sucess}>CSS modules</h3>
       <Form></Form>
       <LifeCycleA name="sachin">this is mounting lifecycle</LifeCycleA>
-    <FragmentDemo></FragmentDemo> */}
+    <FragmentDemo></FragmentDemo> */} 
       <Counter></Counter>
       <RefsDemo></RefsDemo>
       <FocusInput></FocusInput>
@@ -47,6 +49,8 @@ function App() {
       <UserProvider value={"using Context"}>
         <ComponentA name="by passing props through component tree"></ComponentA>
       </UserProvider>
+      <PostList></PostList>
+      <PostForm></PostForm>
     </div>
   );
 }
