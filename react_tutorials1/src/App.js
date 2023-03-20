@@ -46,9 +46,11 @@ function App() {
       <PortalDemo></PortalDemo>
       <ClickCounter name="ClickCounter"></ClickCounter>
       <HoverCounter></HoverCounter>
+
       <UserProvider value={"using Context"}>
         <ComponentA name="by passing props through component tree"></ComponentA>
       </UserProvider>
+      
       <PostList></PostList>
       <PostForm></PostForm>
     </div>
