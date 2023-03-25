@@ -7,5 +7,4 @@ function ComponentA() {
     </div>
   );
 }
-
-export default ComponentA;
+export default ComponentA; 

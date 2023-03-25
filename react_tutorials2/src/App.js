@@ -1,15 +1,19 @@
 import React from "react";
 import "./App.css";
 import ComponentA from "./components/ComponentA";
-import DataFetch from "./components/DataFetch";
+/* import DataFetch from "./components/DataFetch";
+ */
+import DataFetching from "./components/DataFetching";
 import HookCounter from "./components/HookCounter";
 import HookCounter2 from "./components/HookCounter2";
 import HookCounter3 from "./components/HookCounter3";
 import HookCounter4 from "./components/HookCounter4";
 //import IntervalHook from "./components/IntervalHook";
 import MouseContainer from "./components/MouseContainer";
+/* import Reducer1 from "./components/Reducer1";
+ */ import Reducer2 from "./components/Reducer2";
 import UseEffect1 from "./components/useEffect1";
-
+import DataFetching2 from "./components/DataFetching2";
 export const User = React.createContext();
 
 function App() {
@@ -22,10 +26,14 @@ function App() {
       <UseEffect1></UseEffect1>
       <MouseContainer></MouseContainer>
       {/* <IntervalHook></IntervalHook> */}
-      <DataFetch></DataFetch>
+      {/* <DataFetch></DataFetch> */}
       <User.Provider value={"sachin"}>
         <ComponentA></ComponentA>
       </User.Provider>
+      {/* <Reducer1></Reducer1> */}
+      <Reducer2></Reducer2>
+      <DataFetching></DataFetching>
+      <DataFetching2></DataFetching2>
     </div>
   );
 }
