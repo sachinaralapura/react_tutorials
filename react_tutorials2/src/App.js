@@ -14,6 +14,10 @@ import MouseContainer from "./components/MouseContainer";
  */ import Reducer2 from "./components/Reducer2";
 import UseEffect1 from "./components/useEffect1";
 import DataFetching2 from "./components/DataFetching2";
+import ParentComponent from "./components/ParentComponent";
+import UseMemo1 from "./components/UseMemo1";
+import UseRef1 from "./components/UseRef1";
+import UseRef2 from "./components/UseRef2";
 export const User = React.createContext();
 
 function App() {
@@ -34,6 +38,10 @@ function App() {
       <Reducer2></Reducer2>
       <DataFetching></DataFetching>
       <DataFetching2></DataFetching2>
+      <ParentComponent></ParentComponent>
+      <UseMemo1></UseMemo1>
+      <UseRef1> </UseRef1>
+      <UseRef2></UseRef2>
     </div>
   );
 }
